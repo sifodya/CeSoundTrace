@@ -1,0 +1,26 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseconcurrency\\private\\wwise\\wwiseretriggerableasynctask.cpp",
+        "ProvidedModule": "",
+        "PCH": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\intermediate\\build\\win64\\x64\\ma_project_protv1editor\\development\\core\\sharedpch.core.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\wwiseconcurrency\\definitions.wwiseconcurrency.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseconcurrency\\public\\wwise\\wwiseretriggerableasynctask.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseconcurrency\\public\\wwise\\wwisedeferredqueue.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseconcurrency\\public\\wwise\\wwiseexecutionqueue.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseconcurrency\\public\\wwise\\wwisetask.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\wwiseunrealversion.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\launch\\resources\\version.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\stats\\namedevents.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\core\\public\\tasks\\task.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\core\\public\\async\\manualresetevent.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseutils\\public\\wwiseunrealhelper.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseconcurrency\\public\\wwise\\wwiseconcurrencymodule.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseconcurrency\\public\\wwise\\stats\\concurrency.h",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\inttypes.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseresourceloader\\private\\wwise\\loaded\\wwiseloadedassetlibrary.cpp",
+        "ProvidedModule": "",
+        "PCH": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\intermediate\\build\\win64\\x64\\ma_project_protv1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\wwiseresourceloader\\definitions.wwiseresourceloader.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseresourceloader\\public\\wwise\\loaded\\wwiseloadedassetlibrary.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseresourceloader\\public\\wwise\\cookeddata\\wwiseassetlibrarycookeddata.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseengineutils\\public\\wwisecookeventcontext.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\wwiseunrealversion.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\coreuobject\\public\\cooker\\cookevents.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\coreuobject\\public\\cooker\\cookdependency.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\coreuobject\\public\\uobject\\objectsavecontext.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\coreuobject\\public\\uobject\\cookenums.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\coreuobject\\public\\uobject\\objectsaveoverride.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisefilehandler\\public\\wwise\\wwisepackagedfile.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisefilehandler\\uht\\wwisepackagedfile.generated.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwiseresourceloader\\uht\\wwiseassetlibrarycookeddata.generated.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseconcurrency\\public\\wwise\\wwisefuture.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseconcurrency\\public\\wwise\\stats\\concurrency.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\stats\\namedevents.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseutils\\public\\wwise\\stats\\asyncstats.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\core\\public\\hal\\threadmanager.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseresourceloader\\public\\wwise\\stats\\resourceloader.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseutils\\public\\wwise\\stats\\memory.h",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\inttypes.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

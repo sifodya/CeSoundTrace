@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\akaudio\\private\\wwise\\stats\\akaudio.cpp",
+        "ProvidedModule": "",
+        "PCH": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\intermediate\\build\\win64\\x64\\ma_project_protv1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\akaudio\\definitions.akaudio.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\akaudio\\public\\wwise\\stats\\akaudio.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\stats\\namedevents.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

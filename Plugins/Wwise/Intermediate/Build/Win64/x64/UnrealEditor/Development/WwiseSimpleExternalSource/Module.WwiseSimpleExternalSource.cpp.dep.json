@@ -1,0 +1,33 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\wwisesimpleexternalsource\\module.wwisesimpleexternalsource.cpp",
+        "ProvidedModule": "",
+        "PCH": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\intermediate\\build\\win64\\x64\\ma_project_protv1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\wwisesimpleexternalsource\\definitions.wwisesimpleexternalsource.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisesimpleexternalsource\\uht\\wwiseexternalsourcecookiedefaultmedia.gen.cpp",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisesimpleexternalsource\\public\\wwise\\simpleextsrc\\wwiseexternalsourcecookiedefaultmedia.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisesimpleexternalsource\\uht\\wwiseexternalsourcecookiedefaultmedia.generated.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisesimpleexternalsource\\uht\\wwiseexternalsourcemediainfo.gen.cpp",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisesimpleexternalsource\\public\\wwise\\simpleextsrc\\wwiseexternalsourcemediainfo.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisesimpleexternalsource\\uht\\wwiseexternalsourcemediainfo.generated.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisesimpleexternalsource\\uht\\wwiseexternalsourcesettings.gen.cpp",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisesimpleexternalsource\\public\\wwise\\simpleextsrc\\wwiseexternalsourcesettings.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\akaudio\\public\\akunrealeditorhelper.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\engine\\public\\net\\replayout.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\core\\public\\containers\\staticbitarray.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\net\\core\\public\\net\\core\\misc\\guidreferences.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\net\\core\\public\\net\\core\\nettoken\\nettokenexportcontext.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\net\\core\\public\\net\\core\\pushmodel\\pushmodel.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\net\\core\\public\\net\\core\\propertyconditions\\repchangedpropertytracker.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisesimpleexternalsource\\public\\wwise\\stats\\simpleextsrc.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisesimpleexternalsource\\uht\\wwiseexternalsourcesettings.generated.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisesimpleexternalsource\\uht\\wwisesimpleexternalsource.init.gen.cpp",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\wwisesimpleexternalsource\\permoduleinline.gen.cpp",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

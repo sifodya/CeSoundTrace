@@ -1,0 +1,25 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwise\\private\\wwise\\wwisemodule.cpp",
+        "ProvidedModule": "",
+        "PCH": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\intermediate\\build\\win64\\x64\\ma_project_protv1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\wwise\\definitions.wwise.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwise\\public\\wwise\\stats\\wwise.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\stats\\namedevents.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwisesoundengine\\source\\wwisesoundengine\\public\\wwisedefines.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseutils\\public\\wwiseunrealdefines.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\wwiseunrealversion.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\wwisepackagingruntimemoduleimpl.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\wwisepackagingruntimemodule.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingeditor\\public\\wwise\\wwisepackagingeditormoduleimpl.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingeditor\\public\\wwise\\wwisepackagingeditormodule.h",
+            "d:\\games\\ue_5.7\\engine\\source\\developer\\assettools\\public\\assettypecategories.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseaudiolinkruntime\\public\\wwise\\wwiseaudiolinkruntimemodule.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseaudiolinkeditor\\public\\wwise\\wwiseaudiolinkeditormodule.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

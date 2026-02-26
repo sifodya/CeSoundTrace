@@ -1,0 +1,25 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseeditorutils\\private\\wwise\\wwisepluginstyle.cpp",
+        "ProvidedModule": "",
+        "PCH": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\intermediate\\build\\win64\\x64\\ma_project_protv1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\wwiseeditorutils\\definitions.wwiseeditorutils.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseeditorutils\\public\\wwise\\wwisepluginstyle.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\projects\\public\\interfaces\\ipluginmanager.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\projects\\public\\plugindescriptor.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\projects\\public\\custombuildsteps.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\projects\\public\\localizationdescriptor.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\projects\\public\\moduledescriptor.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\projects\\public\\plugindisalloweddescriptor.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\projects\\public\\pluginreferencedescriptor.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\projects\\public\\versescope.h",
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\slatecore\\public\\styling\\slatestyleregistry.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseeditorutils\\public\\wwise\\wwiseeditorutilsmodule.h",
+            "d:\\games\\ue_5.7\\engine\\source\\developer\\assettools\\public\\assettypecategories.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

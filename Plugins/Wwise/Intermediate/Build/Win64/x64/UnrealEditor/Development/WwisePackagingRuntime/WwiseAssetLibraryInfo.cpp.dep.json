@@ -1,0 +1,22 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\private\\wwise\\packaging\\wwiseassetlibraryinfo.cpp",
+        "ProvidedModule": "",
+        "PCH": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\intermediate\\build\\win64\\x64\\ma_project_protv1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\wwisepackagingruntime\\definitions.wwisepackagingruntime.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\packaging\\wwiseassetlibraryinfo.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisepackagingruntime\\uht\\wwiseassetlibraryinfo.generated.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\packaging\\wwiseassetlibraryfilter.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisepackagingruntime\\uht\\wwiseassetlibraryfilter.generated.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\packaging\\wwisesharedassetlibraryfilter.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\packaging\\wwisefilterableassetlibrary.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisepackagingruntime\\uht\\wwisefilterableassetlibrary.generated.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisepackagingruntime\\uht\\wwisesharedassetlibraryfilter.generated.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\stats\\packagingruntime.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseeditorutils\\private\\wwise\\wwiseeditorutilsmoduleimpl.cpp",
+        "ProvidedModule": "",
+        "PCH": "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\intermediate\\build\\win64\\x64\\ma_project_protv1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\wwiseeditorutils\\definitions.wwiseeditorutils.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseeditorutils\\public\\wwise\\wwiseeditorutilsmoduleimpl.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseeditorutils\\public\\wwise\\wwiseeditorutilsmodule.h",
+            "d:\\games\\ue_5.7\\engine\\source\\developer\\assettools\\public\\assettypecategories.h",
+            "d:\\games\\ue_5.7\\engine\\source\\developer\\assettools\\public\\assettoolsmodule.h",
+            "d:\\games\\ue_5.7\\engine\\source\\developer\\assettools\\public\\iassettools.h",
+            "d:\\games\\ue_5.7\\engine\\source\\developer\\assettools\\public\\iassettypeactions.h",
+            "d:\\games\\ue_5.7\\engine\\source\\developer\\merge\\public\\merge.h",
+            "d:\\games\\ue_5.7\\engine\\source\\editor\\unrealed\\classes\\thumbnailrendering\\thumbnailmanager.h",
+            "d:\\games\\ue_5.7\\engine\\source\\editor\\unrealed\\classes\\thumbnailrendering\\thumbnailrenderer.h",
+            "d:\\games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\thumbnailrenderer.generated.h",
+            "d:\\games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\thumbnailmanager.generated.h",
+            "d:\\games\\ue_5.7\\engine\\source\\editor\\unrealed\\public\\automatedassetimportdata.h",
+            "d:\\games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\automatedassetimportdata.generated.h",
+            "d:\\games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\assettools\\uht\\iassettools.generated.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwiseeditorutils\\public\\wwise\\wwisepluginstyle.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

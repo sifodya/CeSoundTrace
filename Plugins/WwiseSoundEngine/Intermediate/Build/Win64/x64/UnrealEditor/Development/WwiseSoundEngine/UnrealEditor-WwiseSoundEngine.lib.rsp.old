@@ -1,0 +1,33 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-WwiseSoundEngine.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Intermediate/Build/Win64/x64/MA_Project_ProtV1Editor/Development/Core/SharedPCH.Core.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/Module.WwiseSoundEngine.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseAssertHook.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseSoundEngineModule.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseSoundEngineUtils.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/SoundEngine.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseSoundEngine_2025_1.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseCommAPI_2025_1.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseMemoryMgrAPI_2025_1.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseMonitorAPI_2025_1.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseSoundEngineAPI_2025_1.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseSpatialAudioAPI_2025_1.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseStreamMgrAPI_2025_1.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WinGDKAPI_2025_1.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WindowsAPI_2025_1.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/DefineNullBridges.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseSoundEngine_Null.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseCommAPI_Null.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseMemoryMgrAPI_Null.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseMonitorAPI_Null.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseSoundEngineAPI_Null.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseSpatialAudioAPI_Null.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/WwiseStreamMgrAPI_Null.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/Default.rc2.res"
+/OUT:"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseSoundEngine/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSoundEngine/UnrealEditor-WwiseSoundEngine.lib"

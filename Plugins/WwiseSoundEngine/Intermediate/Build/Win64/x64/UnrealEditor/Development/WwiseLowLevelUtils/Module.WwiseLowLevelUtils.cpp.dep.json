@@ -7,7 +7,9 @@
         "Includes": [
             "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwisesoundengine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\wwiselowlevelutils\\definitions.wwiselowlevelutils.h",
             "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwisesoundengine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\wwiselowlevelutils\\permoduleinline.gen.cpp",
-            "d:\\games\\ue_5.7\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\private\\wwise\\stats\\namedevents.cpp",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\stats\\namedevents.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

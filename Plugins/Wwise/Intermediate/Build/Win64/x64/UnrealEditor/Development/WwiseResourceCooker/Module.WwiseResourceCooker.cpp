@@ -2,3 +2,7 @@
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/UnrealEditor/Inc/WwiseResourceCooker/UHT/WwiseResourceCooker.init.gen.cpp"
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/UnrealEditor/Inc/WwiseResourceCooker/UHT/WwiseResourceCookerModule.gen.cpp"
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseResourceCooker/PerModuleInline.gen.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwiseResourceCooker/Private/Wwise/Stats/ResourceCooker.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwiseResourceCooker/Private/Wwise/WwiseResourceCookerImpl.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwiseResourceCooker/Private/Wwise/WwiseResourceCookerModule.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwiseResourceCooker/Private/Wwise/WwiseResourceCookerModuleImpl.cpp"

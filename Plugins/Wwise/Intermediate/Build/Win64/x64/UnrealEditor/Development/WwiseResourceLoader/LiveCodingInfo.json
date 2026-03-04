@@ -74,6 +74,12 @@
 			"WwiseLanguageId.cpp.obj",
 			"WwiseResourceLoader.cpp.obj",
 			"WwiseResourceLoaderImpl.cpp.obj"
+		],
+		"Module.WwiseResourceLoader.3.cpp.obj": [
+			"WwiseResourceLoaderModuleImpl.cpp.obj",
+			"WwiseSharedLanguageId.cpp.obj",
+			"ResourceLoaderMediaTests.cpp.obj",
+			"ResourceLoaderTests.cpp.obj"
 		]
 	}
 }

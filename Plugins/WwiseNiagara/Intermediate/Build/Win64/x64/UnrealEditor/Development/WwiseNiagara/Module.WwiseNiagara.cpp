@@ -2,3 +2,6 @@
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseNiagara/Intermediate/Build/Win64/UnrealEditor/Inc/WwiseNiagara/UHT/NiagaraDataInterfaceWwiseEvent.gen.cpp"
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseNiagara/Intermediate/Build/Win64/UnrealEditor/Inc/WwiseNiagara/UHT/WwiseNiagara.init.gen.cpp"
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseNiagara/PerModuleInline.gen.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseNiagara/Source/WwiseNiagara/Private/Wwise/Niagara/NiagaraDataInterfaceWwiseEvent.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseNiagara/Source/WwiseNiagara/Private/Wwise/Stats/Niagara.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/WwiseNiagara/Source/WwiseNiagara/Private/Wwise/WwiseNiagaraModuleImpl.cpp"

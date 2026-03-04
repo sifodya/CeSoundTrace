@@ -8,7 +8,5 @@
 /NODEFAULTLIB
 "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Intermediate/Build/Win64/x64/MA_Project_ProtV1Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
 "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseEditorUtils/Module.WwiseEditorUtils.cpp.obj"
-"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseEditorUtils/WwiseEditorUtilsModuleImpl.cpp.obj"
-"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseEditorUtils/WwisePluginStyle.cpp.obj"
 "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseEditorUtils/Default.rc2.res"
 /OUT:"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseEditorUtils/UnrealEditor-WwiseEditorUtils.lib"

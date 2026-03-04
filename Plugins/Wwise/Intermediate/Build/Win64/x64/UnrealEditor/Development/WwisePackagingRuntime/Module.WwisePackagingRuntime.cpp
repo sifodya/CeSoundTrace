@@ -5,3 +5,6 @@
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/UnrealEditor/Inc/WwisePackagingRuntime/UHT/WwisePackagingRuntime.init.gen.cpp"
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/UnrealEditor/Inc/WwisePackagingRuntime/UHT/WwiseSharedAssetLibraryFilter.gen.cpp"
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwisePackagingRuntime/PerModuleInline.gen.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwisePackagingRuntime/Private/Wwise/Packaging/WwiseAssetLibraryInfo.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwisePackagingRuntime/Private/Wwise/Stats/PackagingRuntime.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwisePackagingRuntime/Private/Wwise/WwisePackagingRuntimeModuleImpl.cpp"

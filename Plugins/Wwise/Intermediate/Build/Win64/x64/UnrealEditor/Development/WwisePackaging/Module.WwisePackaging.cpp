@@ -3,3 +3,7 @@
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/UnrealEditor/Inc/WwisePackaging/UHT/WwisePackaging.init.gen.cpp"
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/UnrealEditor/Inc/WwisePackaging/UHT/WwisePackagingSettings.gen.cpp"
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwisePackaging/PerModuleInline.gen.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwisePackaging/Private/Wwise/Packaging/WwiseAssetLibrary.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwisePackaging/Private/Wwise/Packaging/WwisePackagingSettings.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwisePackaging/Private/Wwise/Stats/Packaging.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwisePackaging/Private/Wwise/WwisePackagingModuleImpl.cpp"

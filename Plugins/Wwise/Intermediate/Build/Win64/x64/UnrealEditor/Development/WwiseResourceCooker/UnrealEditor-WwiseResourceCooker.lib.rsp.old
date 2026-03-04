@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-WwiseResourceCooker.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Intermediate/Build/Win64/x64/MA_Project_ProtV1Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseResourceCooker/Module.WwiseResourceCooker.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseResourceCooker/WwiseResourceCookerImpl.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseResourceCooker/WwiseResourceCookerModule.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseResourceCooker/WwiseResourceCookerModuleImpl.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseResourceCooker/ResourceCooker.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseResourceCooker/Default.rc2.res"
+/OUT:"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseResourceCooker/UnrealEditor-WwiseResourceCooker.lib"

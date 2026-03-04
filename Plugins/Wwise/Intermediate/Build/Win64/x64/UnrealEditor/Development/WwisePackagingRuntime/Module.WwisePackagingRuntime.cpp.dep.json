@@ -20,7 +20,13 @@
             "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\packaging\\wwisesharedassetlibraryfilter.h",
             "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\unrealeditor\\inc\\wwisepackagingruntime\\uht\\wwisesharedassetlibraryfilter.generated.h",
             "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\wwisepackagingruntime\\permoduleinline.gen.cpp",
-            "d:\\games\\ue_5.7\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+            "d:\\games\\ue_5.7\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\private\\wwise\\packaging\\wwiseassetlibraryinfo.cpp",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\stats\\packagingruntime.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\private\\wwise\\stats\\packagingruntime.cpp",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\private\\wwise\\wwisepackagingruntimemoduleimpl.cpp",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\wwisepackagingruntimemoduleimpl.h",
+            "p:\\documents\\unreal projects\\ma_project_protv1 5.7\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\wwisepackagingruntimemodule.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -4,3 +4,6 @@
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/UnrealEditor/Inc/WwiseSimpleExternalSource/UHT/WwiseExternalSourceSettings.gen.cpp"
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/UnrealEditor/Inc/WwiseSimpleExternalSource/UHT/WwiseSimpleExternalSource.init.gen.cpp"
 #include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseSimpleExternalSource/PerModuleInline.gen.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwiseSimpleExternalSource/Private/Wwise/SimpleExtSrc/WwiseSimpleExtScrManager.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwiseSimpleExternalSource/Private/Wwise/Stats/SimpleExtSrc.cpp"
+#include "P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Source/WwiseSimpleExternalSource/Private/Wwise/WwiseSimpleExtSrcModule.cpp"

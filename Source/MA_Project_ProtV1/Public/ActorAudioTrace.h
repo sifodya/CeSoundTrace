@@ -16,6 +16,12 @@
 //#include "ReturnProbe.h"
 #include "tracingControl.h"
 #include "ReturnProbeActor.h"
+#include "SavedImpulse.h"
+#include "DataForWwise.h"
+//#include "P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\UEDataStruct.h"
+//#include "P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h"
+#include <Ak/SoundEngine/Common/AkSoundEngine.h>
+#include <AkAudioDevice.h>
 #include "ActorAudioTrace.generated.h"
 
 
@@ -31,7 +37,7 @@ public:
 
 	//=================================================================================================================
 
-	void setParticleEnergy(float energy) { particleEnergy = energy; defaultParticleEnergy = energy; }
+	void setTotalEnergy(float energy) { totalEnergy = energy; defaultParticleEnergy = energy; }
 	void setUsePhysicalMaterials(bool use) { usePhysicalMaterials = use; }
 	void setSampleRate(float sr) { sampleRate = sr; }
 
@@ -99,6 +105,9 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "CeSoundtrace")
 	TArray<FVector> debugRayCannon(FVector ActorPosition);
 
+	UFUNCTION(BlueprintCallable, Category = "CeSoundtrace")
+	void sendDataToWwise(TArray<FUSavedImpulse> impulse, TArray<float> T60);
+
 	//=================================================================================================================
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "CeSoundtrace")
@@ -112,17 +121,22 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "CeSoundtrace")
 	int currentFreqPass{ 1 }; // 1 = 63HZ, 2 = 125HZ, 3 = 250HZ, 4 = 500HZ, 5 = 1KHZ, 6 = 2KHZ, 7 = 4KHZ, 8 = 8KHZ
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CeSoundtrace")
+	TArray<FUSavedImpulse> saveImpulseArrays;
+	
+
 
 private:
 	void resetParticleEnergy() { particleEnergy = defaultParticleEnergy; }
 	//void combineImpulses();
-	void sendDataToWwise();
+	
 
 
 	//=================================================================================================================
-
+	
+	float totalEnergy{ 12.8f }; //aprox 164 dB -> pistol shot
 	float particleEnergy{ 1.0f };
-	float defaultParticleEnergy{ particleEnergy };
+	float defaultParticleEnergy{ totalEnergy };
 	
 	float currentAbsorption{ 0.0f };
 	float currentDiffusion{ 0.0f };
@@ -131,6 +145,7 @@ private:
 	TArray<FUallHitsForVolume> allHitsForVolumeArray;
 	TArray<FUallSabineSurfaces> allSabineSurfacesArray;
 	TArray<TArray<float>> impulseArrays;
+	
 
 	//=================================================================================================================
 

@@ -9,6 +9,19 @@
 							<ObjectRef Name="System" ID="{1240DD94-B7F3-420F-A156-12855E6C26BE}" WorkUnitID="{DC07FC84-C34D-44AB-B301-D349261C12A4}"/>
 						</Reference>
 					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<EffectSlot Name="" ID="{0A503D9B-4BBB-4AF2-8ED6-C36C87C339EF}" ShortID="129163285">
+								<ReferenceList>
+									<Reference Name="Effect">
+										<Custom>
+											<Effect Name="WP_CeSoundFIRTraceConv_24 (Custom)" ID="{909CDF7F-C202-4513-B6CE-EC0AF9F690DB}" ShortID="78513364" PluginName="WP_CeSoundFIRTraceConv_24" CompanyID="64" PluginID="12210" PluginType="3"/>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</EffectSlot>
+						</ObjectList>
+					</ObjectLists>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

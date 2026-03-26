@@ -9,8 +9,7 @@ UActorAudioTrace::UActorAudioTrace()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-	allHitsForVolumeArray.SetNumZeroed(8);
-	impulseArrays.SetNumZeroed(8);
+	
 	//UE_LOG(LogTemp, Log, TEXT(" ActorAudioTrace Constructor"));
 	/*ECollisionChannel Channel1 = UEngineTypes::ConvertToCollisionChannel(ETraceTypeQuery::TraceTypeQuery1);
 	ECollisionChannel Channel2 = UEngineTypes::ConvertToCollisionChannel(ETraceTypeQuery::TraceTypeQuery2);
@@ -25,6 +24,13 @@ UActorAudioTrace::UActorAudioTrace()
 void UActorAudioTrace::BeginPlay()
 {
 	Super::BeginPlay();
+	allHitsForVolumeArray.SetNumZeroed(8);
+	if (saveImpulseArrays.Num() == 0)
+	{
+		saveImpulseArrays.SetNumZeroed(8);
+		//UE_LOG(LogTemp, Error, TEXT("this: %p | Num: %d"), this, saveImpulseArrays.Num());
+	}
+	
 }
 
 
@@ -72,6 +78,7 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 	FVector SaveReflectionVector = FVector::ZeroVector;
 	FVector actorLocation{ GetOwner()->GetActorLocation() };
 	actorLocation += FVector{ 0.0f, 0.0f, 50.0f };
+	defaultParticleEnergy = totalEnergy / RayAmount;
 	//UE_LOG(LogTemp, Log, TEXT("Starting audio ray trace with %d rays and %d reflections"), RayAmount, ReflectionAmount);
 	for (int i = 1; i <= RayAmount; i++)
 	{
@@ -356,6 +363,7 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 	 {
 		 particleEnergy = getAirDampening(distance, particleEnergy, currentFreqPass);
 		 int32 index = msToSamps(distance / 1000.0f / 343.0f * 1000.0f, sampleRate);
+		 particleEnergy = Kismet::Square(particleEnergy);
 		 if (impulse.IsValidIndex(index))
 			 impulse[index] += particleEnergy;
 		 else
@@ -381,45 +389,56 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 
  void UActorAudioTrace::saveImpulse(TArray<float> impulse)
  {
-	 switch (currentFreqPass - 1)
+	 //UE_LOG(LogTemp, Error, TEXT("this=%p | &array=%p | Num=%d"), this, &saveImpulseArrays, saveImpulseArrays.Num());
+	 int32 Index = currentFreqPass - 1;
+
+	 if (saveImpulseArrays.IsValidIndex(Index))
 	 {
+		 saveImpulseArrays[Index].Impluses = impulse;
+	 }
+	 else
+	 {
+		 checkf(false, TEXT("Invalid index %d for saveImpulseArrays"), Index);
+	 }
+	 /*switch (currentFreqPass - 1)
+	 {
+	 case 0:
+		 check(impulseArrays.IsValidIndex(0));
+		 saveImpulseArrays[0].Impluses = impulse;
+		 break;
 	 case 1:
-		 //check(impulseArrays.IsValidIndex(0));
-		 impulseArrays[0] = impulse;
+		 check(impulseArrays.IsValidIndex(1));
+		 saveImpulseArrays[1].Impluses = impulse;
 		 break;
 	 case 2:
-		 //check(impulseArrays.IsValidIndex(1));
-		 impulseArrays[1] = impulse;
+		 check(impulseArrays.IsValidIndex(2));
+		 saveImpulseArrays[2].Impluses = impulse;
 		 break;
 	 case 3:
-		 //check(impulseArrays.IsValidIndex(2));
-		 impulseArrays[2] = impulse;
+		 check(impulseArrays.IsValidIndex(3));
+		 saveImpulseArrays[3].Impluses = impulse;
 		 break;
 	 case 4:
-		 //check(impulseArrays.IsValidIndex(3));
-		 impulseArrays[3] = impulse;
+		 check(impulseArrays.IsValidIndex(4));
+		 saveImpulseArrays[4].Impluses = impulse;
 		 break;
 	 case 5:
-		 //check(impulseArrays.IsValidIndex(4));
-		 impulseArrays[4] = impulse;
+		 check(impulseArrays.IsValidIndex(5));
+		 saveImpulseArrays[5].Impluses = impulse;
 		 break;
 	 case 6:
-		 //check(impulseArrays.IsValidIndex(5));
-		 impulseArrays[5] = impulse;
+		 check(impulseArrays.IsValidIndex(6));
+		 saveImpulseArrays[6].Impluses = impulse;
 		 break;
 	 case 7:
-		 //check(impulseArrays.IsValidIndex(6));
-		 impulseArrays[6] = impulse;
-		 break;
-	 case 8:
-		 //check(impulseArrays.IsValidIndex(7));
-		 impulseArrays[7] = impulse;
+		 check(impulseArrays.IsValidIndex(7));
+		 saveImpulseArrays[7].Impluses = impulse;
 		 break;
 	 default:
-		 //check(impulseArrays.IsValidIndex(4));
-		 impulseArrays[4] = impulse;
+		 check(impulseArrays.IsValidIndex(4));
+		 saveImpulseArrays[4].Impluses = impulse;
 		 break;
-	 }
+	 }*/
  }
 
  TArray<float> UActorAudioTrace::getSabine()
@@ -592,4 +611,26 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 		  rayVectors.Add(UKismetMathLibrary::CreateVectorFromYawPitch(yaw, pitch, 100000.0f) + ActorPosition);
 	 }
 	 return rayVectors;
+ }
+
+ void UActorAudioTrace::sendDataToWwise(TArray<FUSavedImpulse> impulse, TArray<float> T60)
+ {
+	 FUDataForWwise data;
+	 /*data.arrayOfImpulses = impulse;
+	 data.wwiseT60 = T60;*/
+	 data.arrayOfImpulses.resize(impulse.Num());
+	 for (int i {0}; i<impulse.Num(); i++)
+	 {
+		 data.arrayOfImpulses[i].assign(impulse[i].Impluses.GetData(), impulse[i].Impluses.GetData() + impulse[i].Impluses.Num());
+	 }
+	 data.wwiseT60.assign(T60.GetData(), T60.GetData() + T60.Num());
+	 data.version = data.version + 1;
+
+	 //FAkAudioDevice* AudioDevice = FAkAudioDevice::Get();
+	 
+	 //data.impulses.assign(impulse.GetData(), impulse.GetData() + impulse.Num());
+	 //data.T60.assign(T60.GetData(), T60.GetData() + T60.Num());
+	 AkUInt32 BusID = AK::SoundEngine::GetIDFromString("Master Audio Bus");
+	 AK::SoundEngine::SendPluginCustomGameData(BusID, AK_INVALID_GAME_OBJECT, AkPluginType::AkPluginTypeEffect, 64, 12210, &data, sizeof(data));
+	 //setCustomWwiseData(, data);
  }

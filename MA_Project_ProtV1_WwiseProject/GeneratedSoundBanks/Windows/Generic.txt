@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	621108255	Step			\Default Work Unit\Step	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	304103028	FOOTSTEP - Metal Board Run Barefoot Male - 10	.cache\06\{06D9E38E-42EB-0DC2-333F-7DF0D87602C6}.wem		\Containers\Default Work Unit\Steps\FOOTSTEP - Metal Board Run Barefoot Male - 10		30304
+	490902103	FOOTSTEP - Metal Board Walk Barefoot Male - 2	.cache\0F\{0F702576-DAE3-F2CD-0C88-9ED0954D5168}.wem		\Containers\Default Work Unit\Steps\FOOTSTEP - Metal Board Walk Barefoot Male - 2		41056
+

@@ -9,9 +9,9 @@ public class MA_Project_ProtV1 : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "PhysicsCore", "AkAudio", "WwiseSoundEngine" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "PhysicsCore", "AkAudio", "WwiseSoundEngine", "Wwise", "WP_CeSoundFIRTraceConv_24"});
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "AkAudio", "Projects" });	
+		PrivateDependencyModuleNames.AddRange(new string[] {"AkAudio", "WwiseSoundEngine", "Projects", "Wwise", "WP_CeSoundFIRTraceConv_24"});	
 
 
 	

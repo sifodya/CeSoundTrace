@@ -1,9 +1,0 @@
-{
-	"RemapUnityFiles": 
-	{
-		"Module.WwiseLowLevelUtils.cpp.obj": [
-			"PerModuleInline.gen.cpp.obj",
-			"NamedEvents.cpp.obj"
-		]
-	}
-}

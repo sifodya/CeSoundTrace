@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-WwiseObjectUtils.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Intermediate/Build/Win64/x64/MA_Project_ProtV1Editor/Development/CoreUObject/SharedPCH.CoreUObject.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseObjectUtils/Module.WwiseObjectUtils.cpp.obj"
+"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseObjectUtils/Default.rc2.res"
+/OUT:"P:/Documents/Unreal Projects/MA_Project_ProtV1 5.7/Plugins/Wwise/Intermediate/Build/Win64/x64/UnrealEditor/Development/WwiseObjectUtils/UnrealEditor-WwiseObjectUtils.lib"

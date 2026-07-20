@@ -1,10 +1,56 @@
 ﻿  WP_CeSoundFIRTraceConv_24FX.cpp
   WP_CeSoundFIRTraceConv_24FXParams.cpp
-P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(192,16): warning C4244: 'initializing': conversion from 'double' to 'AkUInt16', possible loss of data
-P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(298,19): warning C4244: 'initializing': conversion from 'size_t' to 'double', possible loss of data
-P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(427,77): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
-P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(427,77): warning C4244:         with
-P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(427,77): warning C4244:         [
-P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(427,77): warning C4244:             _Ty=float
-P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(427,77): warning C4244:         ]
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\ThirdParty\pocketfft-cpp\pocketfft_hdronly.h(874,9): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+  (compiling source file 'WP_CeSoundFIRTraceConv_24FX.cpp')
+  
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\ThirdParty\Dr_wav\dr_wav.h(2591,85): warning C4267: '=': conversion from 'size_t' to 'drwav_uint32', possible loss of data
+  (compiling source file 'WP_CeSoundFIRTraceConv_24FX.cpp')
+  
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(71,28): warning C4244: 'argument': conversion from 'int' to 'const std::complex<float>::_Ty', possible loss of data
+  (compiling source file 'WP_CeSoundFIRTraceConv_24FX.cpp')
+  
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(254,64): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(254,64): warning C4244:         with
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(254,64): warning C4244:         [
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(254,64): warning C4244:             _Ty=float
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(254,64): warning C4244:         ]
+  (compiling source file 'WP_CeSoundFIRTraceConv_24FX.cpp')
+  
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(258,85): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(258,85): warning C4244:         with
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(258,85): warning C4244:         [
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(258,85): warning C4244:             _Ty=float
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(258,85): warning C4244:         ]
+  (compiling source file 'WP_CeSoundFIRTraceConv_24FX.cpp')
+  
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(303,64): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(303,64): warning C4244:         with
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(303,64): warning C4244:         [
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(303,64): warning C4244:             _Ty=float
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(303,64): warning C4244:         ]
+  (compiling source file 'WP_CeSoundFIRTraceConv_24FX.cpp')
+  
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(307,87): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(307,87): warning C4244:         with
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(307,87): warning C4244:         [
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(307,87): warning C4244:             _Ty=float
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h(307,87): warning C4244:         ]
+  (compiling source file 'WP_CeSoundFIRTraceConv_24FX.cpp')
+  
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(261,49): warning C4267: '+=': conversion from 'size_t' to 'AkUInt16', possible loss of data
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(385,16): warning C4244: 'initializing': conversion from 'float' to 'AkUInt16', possible loss of data
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(423,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(491,16): warning C4244: 'initializing': conversion from 'float' to 'AkUInt16', possible loss of data
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(636,27): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(636,27): warning C4244:         with
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(636,27): warning C4244:         [
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(636,27): warning C4244:             _Ty=float
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(636,27): warning C4244:         ]
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(637,26): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(637,26): warning C4244:         with
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(637,26): warning C4244:         [
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(637,26): warning C4244:             _Ty=float
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(637,26): warning C4244:         ]
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(713,35): warning C4267: '=': conversion from 'size_t' to 'AkUInt16', possible loss of data
+P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.cpp(714,35): warning C4267: '=': conversion from 'size_t' to 'AkUInt16', possible loss of data
   WP_CeSoundFIRTraceConv_24_Windows_vc170_static.vcxproj -> C:\Audiokinetic\Wwise2025.1.5.9095\SDK\x64_vc170\Release(StaticCRT)\lib\WP_CeSoundFIRTraceConv_24FX.lib

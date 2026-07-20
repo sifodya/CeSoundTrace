@@ -1,0 +1,133 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4294388576",
+    "Type": "User",
+    "GUID": "{D8987750-451F-4B82-8278-079E2B36CC0D}",
+    "Language": "SFX",
+    "Hash": "{35C125C9-E38A-F653-90A3-2FD4F1B0900C}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Generic",
+    "ShortName": "Generic",
+    "Path": "Generic.bnk",
+    "Media": [
+     {
+      "Id": "16149024",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FOOTSTEP - Metal Board Walk Barefoot Male - 27.wav",
+      "CachePath": "DB/{DB3D7EE0-C8B7-7C02-9A61-83E2F3F2588D}.wem"
+     },
+     {
+      "Id": "517623999",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FOOTSTEP - Metal Board Run Barefoot Male - 17.wav",
+      "CachePath": "C8/{C80660C8-D66B-2ADB-8ABC-0A2028ED459E}.wem"
+     },
+     {
+      "Id": "702434230",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EV_Title.wav",
+      "CachePath": "46/{46E4E749-9CA4-3E27-45E8-C2A363EF57E5}.wem"
+     },
+     {
+      "Id": "735759203",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FOOTSTEP - Metal Board Walk Barefoot Male - 24.wav",
+      "CachePath": "1D/{1D0E2088-7224-7AD4-D722-9102E295719E}.wem"
+     },
+     {
+      "Id": "878702245",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Footsteps_Icy_Normal_Single_Fienup_006_SIS2.wav",
+      "CachePath": "59/{599A1175-F784-B17B-065B-86B286AF6123}.wem"
+     },
+     {
+      "Id": "962932320",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FOOTSTEP - Metal Board Run Barefoot Male - 10.wav",
+      "CachePath": "06/{06D9E38E-42EB-0DC2-333F-7DF0D87602C6}.wem"
+     },
+     {
+      "Id": "965267266",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FOOTSTEP - Metal Board Walk Barefoot Male - 2.wav",
+      "CachePath": "0F/{0F702576-DAE3-F2CD-0C88-9ED0954D5168}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1685527043",
+      "Name": "MU",
+      "ObjectPath": "\\Events\\Default Work Unit\\MU",
+      "GUID": "{AD7B3B5F-52AC-43C0-9362-38A620290D3B}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "702434230"
+       }
+      ]
+     },
+     {
+      "Id": "3791426496",
+      "Name": "Step_Long",
+      "ObjectPath": "\\Events\\Default Work Unit\\Step_Long",
+      "GUID": "{B8B04A59-10C7-47B1-A10E-1F88BDE6FB90}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0293334",
+      "DurationMax": "1.0293334",
+      "MediaRefs": [
+       {
+        "Id": "878702245"
+       }
+      ]
+     },
+     {
+      "Id": "1718617278",
+      "Name": "Steps",
+      "ObjectPath": "\\Events\\Default Work Unit\\Steps",
+      "GUID": "{F9226926-32A3-425B-9607-A4EE0B53B51A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.31466666",
+      "DurationMax": "0.45866665",
+      "MediaRefs": [
+       {
+        "Id": "16149024"
+       },
+       {
+        "Id": "517623999"
+       },
+       {
+        "Id": "735759203"
+       },
+       {
+        "Id": "962932320"
+       },
+       {
+        "Id": "965267266"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{FCB58950-0DAB-4744-8C56-0DE9137A49C4}"
+ }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F3542FC8-34CC-461B-9314-C95D52279F2C}" SchemaVersion="133">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{F3542FC8-34CC-461B-9314-C95D52279F2C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_WP_CeSoundFIRTraceConv_24" ID="{7CDC8BC0-A162-44C0-836F-B6709613FD96}" PluginName="WP_CeSoundFIRTraceConv_24" CompanyID="64" PluginID="12210" PluginType="3"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

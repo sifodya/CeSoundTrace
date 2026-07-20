@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F4E20606-DC03-4256-BCDB-B288517638E6}" SchemaVersion="133">
+	<Devices>
+		<WorkUnit Name="Default Work Unit" ID="{F4E20606-DC03-4256-BCDB-B288517638E6}" PersistMode="Standalone">
+			<ChildrenList>
+				<AudioDevice Name="System" ID="{C003FD7D-AFDD-4FB3-BD67-149AB79E03DC}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7"/>
+				<AudioDevice Name="No_Output" ID="{5EDB4642-6F4E-4943-AFBC-5799D128C0D6}" PluginName="No Output" CompanyID="0" PluginID="181" PluginType="7"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Devices>
+</WwiseDocument>

@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1685527043	MU			\Default Work Unit\MU	
+	1718617278	Steps			\Default Work Unit\Steps	
+	3791426496	Step_Long			\Default Work Unit\Step_Long	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	16149024	FOOTSTEP - Metal Board Walk Barefoot Male - 27	.cache\DB\{DB3D7EE0-C8B7-7C02-9A61-83E2F3F2588D}.wem		\Containers\Default Work Unit\Steps\FOOTSTEP - Metal Board Walk Barefoot Male - 27		44128
+	517623999	FOOTSTEP - Metal Board Run Barefoot Male - 17	.cache\C8\{C80660C8-D66B-2ADB-8ABC-0A2028ED459E}.wem		\Containers\Default Work Unit\Steps\FOOTSTEP - Metal Board Run Barefoot Male - 17		41056
+	702434230	EV_Title	.cache\46\{46E4E749-9CA4-3E27-45E8-C2A363EF57E5}.wem		\Containers\Default Work Unit\EV_Title		21054400
+	735759203	FOOTSTEP - Metal Board Walk Barefoot Male - 24	.cache\1D\{1D0E2088-7224-7AD4-D722-9102E295719E}.wem		\Containers\Default Work Unit\Steps\FOOTSTEP - Metal Board Walk Barefoot Male - 24		43616
+	878702245	Footsteps_Icy_Normal_Single_Fienup_006_SIS2	.cache\59\{599A1175-F784-B17B-065B-86B286AF6123}.wem		\Containers\Default Work Unit\Footsteps_Icy_Normal_Single_Fienup_006_SIS2		98912
+	962932320	FOOTSTEP - Metal Board Run Barefoot Male - 10	.cache\06\{06D9E38E-42EB-0DC2-333F-7DF0D87602C6}.wem		\Containers\Default Work Unit\Steps\FOOTSTEP - Metal Board Run Barefoot Male - 10		30304
+	965267266	FOOTSTEP - Metal Board Walk Barefoot Male - 2	.cache\0F\{0F702576-DAE3-F2CD-0C88-9ED0954D5168}.wem		\Containers\Default Work Unit\Steps\FOOTSTEP - Metal Board Walk Barefoot Male - 2		41056
+

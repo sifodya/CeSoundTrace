@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EA31B55E-237E-43A5-94BB-E785A0F7F5F7}" SchemaVersion="133">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{EA31B55E-237E-43A5-94BB-E785A0F7F5F7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{C003FD7D-AFDD-4FB3-BD67-149AB79E03DC}" WorkUnitID="{F4E20606-DC03-4256-BCDB-B288517638E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="MONO" ID="{DB8BB8B0-571E-4E94-9173-76FBC4F64A20}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>16641</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{44DFB4A7-5083-488D-97A5-F2E532C3904C}" ShortID="78705216">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="WP_CeSoundFIRTraceConv_24" CompanyID="64" PluginID="12210" PluginType="3">
+												<ObjectRef Name="New_WP_CeSoundFIRTraceConv_24" ID="{7CDC8BC0-A162-44C0-836F-B6709613FD96}" WorkUnitID="{F3542FC8-34CC-461B-9314-C95D52279F2C}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="NOFX_Bus" ID="{F6D7075E-F15C-4D47-B56F-F7745B25CEE3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{C003FD7D-AFDD-4FB3-BD67-149AB79E03DC}" WorkUnitID="{F4E20606-DC03-4256-BCDB-B288517638E6}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

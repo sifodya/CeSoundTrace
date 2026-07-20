@@ -1,0 +1,26 @@
+{
+ "PluginInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "PluginLibs": [
+   {
+    "LibName": "System",
+    "LibId": "11403271",
+    "Type": "AudioDevice"
+   },
+   {
+    "LibName": "No Output",
+    "LibId": "11862023",
+    "Type": "AudioDevice"
+   },
+   {
+    "LibName": "WP_CeSoundFIRTraceConv_24",
+    "LibId": "800195587",
+    "Type": "Effect",
+    "DLL": "WP_CeSoundFIRTraceConv_24",
+    "StaticLib": "WP_CeSoundFIRTraceConv_24FX"
+   }
+  ],
+  "FileHash": "{E2DDEE60-9C7A-7C04-72DC-804B1C21C7F6}"
+ }
+}

@@ -13,18 +13,26 @@
 #include "TraceSurfaceMaterials.h"
 #include "allHitsForVolume.h"
 #include "allSabineSurfaces.h"
-//#include "ReturnProbe.h"
 #include "tracingControl.h"
 #include "ReturnProbeActor.h"
 #include "SavedImpulse.h"
 #include "DataForWwise.h"
-//#include "P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\UEDataStruct.h"
-//#include "P:\Documents\Git Repo\WP_CeSoundFIRTraceConv\WP_CeSoundFIRTraceConv_25\SoundEnginePlugin\WP_CeSoundFIRTraceConv_24FX.h"
-#include <Ak/SoundEngine/Common/AkSoundEngine.h>
+#include "P:\Documents\Unreal Projects\MA_Project_ProtV1 5.7\MA_Project_ProtV1 5.7_WwiseProject\GeneratedSoundBanks\Wwise_IDs.h"
+#include "AkgameplayStatics.h"
+#include "Wwise/API/WwiseSoundEngineAPI.h"
+//#include <Ak/SoundEngine/Common/AkSoundEngine.h>
 #include <AkAudioDevice.h>
 #include "ActorAudioTrace.generated.h"
 
-
+//#ifdef __clang__
+//#pragma message("__clang__ defined")
+//#else
+//#pragma message("__clang__ NOT defined")
+//#endif
+//
+//#ifdef _MSC_VER
+//#pragma message("_MSC_VER defined")
+//#endif
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent), Blueprintable)
 class MA_PROJECT_PROTV1_API UActorAudioTrace : public UActorComponent
@@ -76,7 +84,7 @@ protected:
 	void addHitToAll(const FVector& point, const FVector& actorPosition);
 
 	UFUNCTION(BlueprintCallable, Category = "CeSoundtrace")
-	void checkAndAddHitToFIR(AActor* hitActor, const float& distance, TArray<float> impulse);
+	bool checkAndAddHitToFIR(AActor* hitActor, const float& distance, TArray<float>& impulse);
 
 	UFUNCTION(BlueprintCallable, meta=(ReturnDisplayName = "Energy Out"), Category = "CeSoundtrace")
 	float getAirDampening(const float& distance, const float& energyIn, const int32& currentFreq);
@@ -108,6 +116,19 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "CeSoundtrace")
 	void sendDataToWwise(TArray<FUSavedImpulse> impulse, TArray<float> T60);
 
+	UFUNCTION(BlueprintCallable, Category = "CeSoundtrace")
+	void resetSaveImpulseArrays() { 
+		if (saveImpulseArrays.Num() == 0)
+		{
+			saveImpulseArrays.SetNumZeroed(8);
+		}
+		else
+		{
+			saveImpulseArrays.Empty();
+			saveImpulseArrays.SetNumZeroed(8);
+		}
+	}
+
 	//=================================================================================================================
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "CeSoundtrace")
@@ -124,6 +145,10 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CeSoundtrace")
 	TArray<FUSavedImpulse> saveImpulseArrays;
 	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Audio")
+	TObjectPtr<UAkAudioEvent> AudioEvent;
+
+	
 
 
 private:
@@ -134,7 +159,7 @@ private:
 
 	//=================================================================================================================
 	
-	float totalEnergy{ 12.8f }; //aprox 164 dB -> pistol shot
+	float totalEnergy{ 164.0f }; //aprox 164 dB -> pistol shot
 	float particleEnergy{ 1.0f };
 	float defaultParticleEnergy{ totalEnergy };
 	

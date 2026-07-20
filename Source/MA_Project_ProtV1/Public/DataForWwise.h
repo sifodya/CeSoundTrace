@@ -15,16 +15,10 @@ USTRUCT(BlueprintType)
 struct MA_PROJECT_PROTV1_API FUDataForWwise
 {
 	GENERATED_BODY()
-	
-	/*UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<FUSavedImpulse> arrayOfImpulses;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<float> wwiseT60;*/
 
 	std::vector<std::vector<float>> arrayOfImpulses;
 
 	std::vector<float> wwiseT60;
 
-	int32 version{ 0 };
+	signed int version{ 0 };
 };

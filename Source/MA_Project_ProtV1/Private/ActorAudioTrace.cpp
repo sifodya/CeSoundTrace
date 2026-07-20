@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "ActorAudioTrace.h"
 
 // Sets default values for this component's properties
@@ -11,12 +10,12 @@ UActorAudioTrace::UActorAudioTrace()
 	PrimaryComponentTick.bCanEverTick = true;
 	
 	//UE_LOG(LogTemp, Log, TEXT(" ActorAudioTrace Constructor"));
-	/*ECollisionChannel Channel1 = UEngineTypes::ConvertToCollisionChannel(ETraceTypeQuery::TraceTypeQuery1);
-	ECollisionChannel Channel2 = UEngineTypes::ConvertToCollisionChannel(ETraceTypeQuery::TraceTypeQuery2);
-	FName ChannelName1 = UCollisionProfile::Get()->ReturnChannelNameFromContainerIndex(Channel1);
-	FName ChannelName2 = UCollisionProfile::Get()->ReturnChannelNameFromContainerIndex(Channel2);
+	//ECollisionChannel Channel1 = UEngineTypes::ConvertToCollisionChannel(ETraceTypeQuery::TraceTypeQuery2);
+	////ECollisionChannel Channel2 = UEngineTypes::ConvertToCollisionChannel(ETraceTypeQuery::TraceTypeQuery2);
+	//FName ChannelName1 = UCollisionProfile::Get()->ReturnChannelNameFromContainerIndex(Channel1);
+	////FName ChannelName2 = UCollisionProfile::Get()->ReturnChannelNameFromContainerIndex(Channel2);
 
-	UE_LOG(LogTemp, Warning, TEXT("Channel name: %s, %s"), *ChannelName1.ToString(), *ChannelName2.ToString());*/
+	//UE_LOG(LogTemp, Warning, TEXT("Channel name: %s"), *ChannelName1.ToString());
 }
 
 
@@ -50,7 +49,7 @@ void UActorAudioTrace::completeTrace()
 		FUtracingControl* RowData = tracingControl->FindRow<FUtracingControl>(currentRow, ContextString2, true);
 		if (!RowData)
 		{
-			UE_LOG(LogTemp, Error, TEXT("RowData is null"));
+			//UE_LOG(LogTemp, Error, TEXT("RowData is null"));
 			return;
 		}
 		currentFreqPass = RowData->freq;
@@ -72,7 +71,7 @@ void UActorAudioTrace::completeTrace()
 TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 RayAmount)
 {
 	TArray<float> impulse;
-	impulse.SetNumZeroed(8);
+	impulse.SetNumZeroed(20000);
 	float totalDistance{ 0.0f };
 	FVector SaveLocationVector = FVector::ZeroVector;
 	FVector SaveReflectionVector = FVector::ZeroVector;
@@ -89,17 +88,25 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 		FHitResult hitResult;
 		resetParticleEnergy();
 		FVector initialRay = RayCannon(i, actorLocation);
-		ETraceTypeQuery traceChannel{ firstTrace ? ETraceTypeQuery::TraceTypeQuery1 : ETraceTypeQuery::TraceTypeQuery2 }; //Visibility, Camera
+		
 		for (int j = 1 ; j <= ReflectionAmount; j++)
 		{
+			ETraceTypeQuery traceChannel{ firstTrace ? ETraceTypeQuery::TraceTypeQuery1 : ETraceTypeQuery::TraceTypeQuery2 }; //Visibility, Camera
+			
+			/*ECollisionChannel collisionChannel = UEngineTypes::ConvertToCollisionChannel(traceChannel);
+			FName ChannelName1 = UCollisionProfile::Get()->ReturnChannelNameFromContainerIndex(collisionChannel);
+			UE_LOG(LogTemp, Warning, TEXT("Channel name: %s"), *ChannelName1.ToString());*/
+
+			//UE_LOG(LogTemp, Log, TEXT("FirstHit: %s"), firstTrace ? TEXT("true") : TEXT("false"));
 			//UE_LOG(LogTemp, Log, TEXT("Performing trace %d for ray %d"), j, i);
+			EDrawDebugTrace::Type debugTrace = i%5 == 0 ? EDrawDebugTrace::Type::ForDuration : EDrawDebugTrace::Type::None;
 			if(SKismet::LineTraceSingle(GetWorld(),
 				Kismet::SelectVector(actorLocation, SaveLocationVector, firstTrace), 
 				Kismet::SelectVector(initialRay, SaveReflectionVector, firstTrace),
 				traceChannel,
 				false,
 				actorsToIgnore,
-				EDrawDebugTrace::Type::None,
+				debugTrace,
 				hitResult,
 				true,
 				FLinearColor::Red,
@@ -107,12 +114,21 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 				5.0f
 				))
 			{
+				totalDistance += hitResult.Distance;
+				if (checkAndAddHitToFIR(hitResult.GetActor(), totalDistance, impulse))
+				{
+					//UE_LOG(LogTemp, Warning, TEXT("Impulse length: %d"), impulse.Num());
+					break;
+				}
+
 				//UE_LOG(LogTemp, Log, TEXT("Selected Vector Start is: %s first Trace is %s"), *UKismetStringLibrary::Conv_VectorToString( (Kismet::SelectVector(actorLocation, SaveLocationVector, firstTrace))), *UKismetStringLibrary::Conv_BoolToString( firstTrace));
 				if (usePhysicalMaterials)
 				{
-					UActorComponent* returnHit = hitResult.GetActor()->AActor::GetComponentByClass(UReturnProbe::StaticClass());
-					if (IsValid(returnHit))
-						break;
+					/*UActorComponent* returnHit = hitResult.GetActor()->AActor::GetComponentByClass(UReturnProbe::StaticClass());
+					if (!IsValid(returnHit))
+						break;*/
+
+					//Check for DefaultPhysical Material and skip absorption and diffusion if not present
 					if (hitResult.PhysMaterial.Get()->GetName() == "DefaultPhysicalMaterial")
 					{
 						//UE_LOG(LogTemp, Warning, TEXT("Hit actor %s has default physical material, skipping absorption and diffusion calculations"), *SKismet::GetDisplayName(hitResult.GetActor()));
@@ -127,7 +143,7 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 						addHitToAll(hitResult.Location, hitResult.TraceStart);
 						if (particleEnergy <= 0.0f)
 						{
-							UE_LOG(LogTemp, Warning, TEXT("Particle energy depleted, breaking out of reflection loop"));
+							//UE_LOG(LogTemp, Warning, TEXT("Particle energy depleted, breaking out of reflection loop"));
 							break;
 						}
 						continue;
@@ -143,8 +159,8 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 					hitResult.ImpactPoint);
 				actorsToIgnore.Add(hitResult.GetActor());
 				actorsToIgnore.Add(GetOwner());
-				firstTrace = false;
-				totalDistance += hitResult.Distance;
+				firstTrace = firstTrace ? false : firstTrace;
+				
 				addHitToSabineMesh(hitResult.Normal,
 					hitResult.Location,
 					hitResult.GetActor(),
@@ -152,10 +168,10 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 				addHitToAll(hitResult.Location, hitResult.TraceStart);
 				if(particleEnergy <= 0.0f)
 				{
-					UE_LOG(LogTemp, Warning, TEXT("Particle energy depleted, breaking out of reflection loop"));
+					//UE_LOG(LogTemp, Warning, TEXT("Particle energy depleted, breaking out of reflection loop"));
 					break;
 				}
-				checkAndAddHitToFIR(hitResult.GetActor(), totalDistance, impulse);
+				
 			}
 		}
 	}
@@ -349,31 +365,38 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 	 }
  }
 
- void UActorAudioTrace::checkAndAddHitToFIR(AActor* hitActor, const float& distance, TArray<float> impulse)
+ bool UActorAudioTrace::checkAndAddHitToFIR(AActor* hitActor, const float& distance, TArray<float>& impulse)
  {
+	 //UE_LOG(LogTemp, Warning, TEXT("Checking for Component on hit actor %s"), *SKismet::GetDisplayName(hitActor));
 	 //UE_LOG(LogTemp, Log, TEXT("Checking hit for FIR with energy %f at distance %f"), particleEnergy, distance);
-	 UActorComponent* returnHit = hitActor->AActor::GetComponentByClass(UReturnProbe::StaticClass());
+	 //UActorComponent* returnHit = hitActor->AActor::GetComponentByClass(UReturnProbe::StaticClass());
 	 UActorComponent* returnComponent = hitActor->AActor::FindComponentByTag(UReturnProbe::StaticClass(), FName("Probe"));
-	 if(IsValid(returnHit))
-		 UE_LOG(LogTemp, Warning, TEXT("Hit actor has return probe component"));
-	 if (IsValid(returnComponent))
-		 UE_LOG(LogTemp, Warning, TEXT("Hit actor has return probe tag"));
+	 /*if(IsValid(returnHit))
+		 UE_LOG(LogTemp, Warning, TEXT("Hit actor has return probe component"));*/
+		 
 	 //UE_LOG(LogTemp, Log, TEXT("Hit actor: %s"), *SKismet::GetDisplayName(hitActor));
-	 if (IsValid(returnHit))
+	 if (IsValid(returnComponent))
 	 {
+		 //UE_LOG(LogTemp, Warning, TEXT("Hit actor has return probe tag"));
 		 particleEnergy = getAirDampening(distance, particleEnergy, currentFreqPass);
 		 int32 index = msToSamps(distance / 1000.0f / 343.0f * 1000.0f, sampleRate);
 		 particleEnergy = Kismet::Square(particleEnergy);
 		 if (impulse.IsValidIndex(index))
+		 {
 			 impulse[index] += particleEnergy;
+			 //UE_LOG(LogTemp, Log, TEXT("Index valid"));
+		 }
 		 else
 		 {
 			 impulse.SetNum(index+1, false);
-			 impulse[index] = particleEnergy;
+			 impulse[index] += particleEnergy;
+			 //UE_LOG(LogTemp, Log, TEXT("Index invalid"));
 		 }
-		 UE_LOG(LogTemp, Warning, TEXT("Hit added to FIR with energy %f at index %d"), particleEnergy, index - 1);
+		 //UE_LOG(LogTemp, Warning, TEXT("Hit added to FIR with energy %f at index %d"), particleEnergy, index - 1);
+		 return true;
 	 }
 	 //UE_LOG(LogTemp, Log, TEXT("Hit checked for FIR with energy %f at distance %f"), particleEnergy, distance);
+	 return false;
  }
 
  float UActorAudioTrace::getAirDampening(const float& distance, const float& energyIn, const int32& currentFreq)
@@ -396,48 +419,9 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 	 {
 		 saveImpulseArrays[Index].Impluses = impulse;
 	 }
-	 else
+	 /*else
 	 {
 		 checkf(false, TEXT("Invalid index %d for saveImpulseArrays"), Index);
-	 }
-	 /*switch (currentFreqPass - 1)
-	 {
-	 case 0:
-		 check(impulseArrays.IsValidIndex(0));
-		 saveImpulseArrays[0].Impluses = impulse;
-		 break;
-	 case 1:
-		 check(impulseArrays.IsValidIndex(1));
-		 saveImpulseArrays[1].Impluses = impulse;
-		 break;
-	 case 2:
-		 check(impulseArrays.IsValidIndex(2));
-		 saveImpulseArrays[2].Impluses = impulse;
-		 break;
-	 case 3:
-		 check(impulseArrays.IsValidIndex(3));
-		 saveImpulseArrays[3].Impluses = impulse;
-		 break;
-	 case 4:
-		 check(impulseArrays.IsValidIndex(4));
-		 saveImpulseArrays[4].Impluses = impulse;
-		 break;
-	 case 5:
-		 check(impulseArrays.IsValidIndex(5));
-		 saveImpulseArrays[5].Impluses = impulse;
-		 break;
-	 case 6:
-		 check(impulseArrays.IsValidIndex(6));
-		 saveImpulseArrays[6].Impluses = impulse;
-		 break;
-	 case 7:
-		 check(impulseArrays.IsValidIndex(7));
-		 saveImpulseArrays[7].Impluses = impulse;
-		 break;
-	 default:
-		 check(impulseArrays.IsValidIndex(4));
-		 saveImpulseArrays[4].Impluses = impulse;
-		 break;
 	 }*/
  }
 
@@ -615,9 +599,9 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 
  void UActorAudioTrace::sendDataToWwise(TArray<FUSavedImpulse> impulse, TArray<float> T60)
  {
-	 FUDataForWwise data;
-	 /*data.arrayOfImpulses = impulse;
-	 data.wwiseT60 = T60;*/
+	 static FUDataForWwise data;
+	 
+	 
 	 data.arrayOfImpulses.resize(impulse.Num());
 	 for (int i {0}; i<impulse.Num(); i++)
 	 {
@@ -626,11 +610,27 @@ TArray<float> UActorAudioTrace::AudioRayTraceV3(int32 ReflectionAmount, int32 Ra
 	 data.wwiseT60.assign(T60.GetData(), T60.GetData() + T60.Num());
 	 data.version = data.version + 1;
 
-	 //FAkAudioDevice* AudioDevice = FAkAudioDevice::Get();
+	 /*AActor* Owner = GetOwner();
+	 if (AudioEvent && Owner)
+	 {
+		 UAkGameplayStatics::PostEvent(AudioEvent, Owner, 0, FOnAkPostEventCallback());
+		 UE_LOG(LogTemp, Warning, TEXT("Posted audio event to Wwise"));
+	 }*/
+
+	 FAkAudioDevice* Device = FAkAudioDevice::Get();
 	 
-	 //data.impulses.assign(impulse.GetData(), impulse.GetData() + impulse.Num());
-	 //data.T60.assign(T60.GetData(), T60.GetData() + T60.Num());
-	 AkUInt32 BusID = AK::SoundEngine::GetIDFromString("Master Audio Bus");
-	 AK::SoundEngine::SendPluginCustomGameData(BusID, AK_INVALID_GAME_OBJECT, AkPluginType::AkPluginTypeEffect, 64, 12210, &data, sizeof(data));
-	 //setCustomWwiseData(, data);
+	 IWwiseSoundEngineAPI* SoundEngineAPI = IWwiseSoundEngineAPI::Get();
+
+	 AkUInt32 DataSize = sizeof(FUDataForWwise);
+	 
+	 AKRESULT result = SoundEngineAPI->SendPluginCustomGameData(AK::BUSSES::MONO, AK_INVALID_GAME_OBJECT, AkPluginType::AkPluginTypeEffect, 64, 12210, &data, DataSize);
+
+	 if(result == AK_Success)
+	 {
+		 UE_LOG(LogTemp, Warning, TEXT("Successfully sent custom game data to Wwise"));
+	 }
+	 else
+	 {
+		 UE_LOG(LogTemp, Error, TEXT("Failed to send custom game data to Wwise. Result: %d"), result);
+	 }
  }
